@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 
 export function Calculadora() {
@@ -24,7 +24,7 @@ export function Calculadora() {
             }
 
             if (num === "=") {
-                setResultado(eval(numero))
+                setResultado(numero)
                 limpiar()
                 return
             }
